@@ -5,22 +5,26 @@
 
 Console.WriteLine("Программа примет три числа и вычислит какое большее, установит равенство.");
 Console.WriteLine("Введите первое число: ");
-int num1 = int.Parse(Console.ReadLine());
+//int num1 = int.Parse(Console.ReadLine());
+int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
-int num2 = int.Parse(Console.ReadLine());
+//int num2 = int.Parse(Console.ReadLine());
+int num2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите третье число: ");
-int num3 = int.Parse(Console.ReadLine());
+//int num3 = int.Parse(Console.ReadLine());
+int num3 = Convert.ToInt32(Console.ReadLine());
 int max = num1;
 if (num1 == num2 && num1 == num3)
 {
     Console.WriteLine("Все три числа равны");
 }
-else if (num2 > max)
+if (num2 > max)
 {
     max = num2;
 }
-else if (num3 > max)
+if (num3 > max)
 {
-    max = num3;
+max = num3;
 }
+
 Console.WriteLine($"{max} -максимальное значением среди чисел");
