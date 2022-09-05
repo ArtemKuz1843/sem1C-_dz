@@ -9,9 +9,9 @@ int num1 = int.Parse(Console.ReadLine());
 int ost = num1 % 2;
 if (ost == 0)
 {
-Console.WriteLine($"{num1} -чётное число");
+    Console.WriteLine($"{num1} -чётное число");
 }
 else
 {
-Console.WriteLine($"{num1} -нечётное число");
+    Console.WriteLine($"{num1} -не является чётным");
 }

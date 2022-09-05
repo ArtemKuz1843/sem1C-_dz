@@ -3,7 +3,7 @@
 // 44, 5, 78 -> 78
 // 22, 3, 9 -> 22
 
-Console.WriteLine("Программа примет три числа и вычислит какое большее, установит равенство.");
+Console.WriteLine("Программа примет три числа и вычислит какое большее или сообщит о равенстве.");
 Console.WriteLine("Введите первое число: ");
 //int num1 = int.Parse(Console.ReadLine());
 int num1 = Convert.ToInt32(Console.ReadLine());
@@ -24,7 +24,7 @@ if (num2 > max)
 }
 if (num3 > max)
 {
-max = num3;
+    max = num3;
 }
 
-Console.WriteLine($"{max} -максимальное значением среди чисел");
+Console.WriteLine($"{max} -максимальное значение из введённых чисел");
