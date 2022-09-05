@@ -6,6 +6,12 @@
 Console.WriteLine("Программа вычислит является ли число чётным.");
 Console.WriteLine("Введите число: ");
 int num1 = int.Parse(Console.ReadLine());
-
-
-Console.WriteLine("Введите второе число: ");
+int ost = num1 % 2;
+if (ost == 0)
+{
+Console.WriteLine($"{num1} -чётное число");
+}
+else
+{
+Console.WriteLine($"{num1} -нечётное число");
+}
